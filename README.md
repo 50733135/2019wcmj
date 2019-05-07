@@ -1,6 +1,6 @@
 # cmstest
 
-https://mde.tw/cmstest
+https://50733135.github.io/2019wcmj/content/index.html
 
 將 master 設為 github pages 分支.
 
