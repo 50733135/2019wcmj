@@ -1,8 +1,11 @@
 <h1>head 1</h1>
 <p>content 1</p>
 <p></p>
+<p></p>
 <div class="line number1 index0 alt2"><code class="html plain"></code></div>
 <p><button onclick="myFunction()">按一下</button></p>
+<p><button onclick="myFunction()"></button></p>
+<p> 1234567891554</p>
 <p id="demo"></p>
 <script>// <![CDATA[
 // <![CDAIA[
@@ -10,5 +13,12 @@ function myFunction(){
  document.getElementById("demo").innerHTML = Math.floor(Math.random()*50+1);
  //document.getElementById("demo").innerHTML ="按一下";
  alert("不要亂按");
+}
+// ]]></script>
+<p>p&gt;<button onclick="myFunction()">Try it</button></p>
+<p id="demo"></p>
+<script>// <![CDATA[
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.floor(Math.random()*10);
 }
 // ]]></script>
