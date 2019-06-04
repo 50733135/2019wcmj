@@ -15,7 +15,7 @@
 <p></p>
 <p>建立 Git 倉儲, 並 clone 倉儲至近端工作後, 對遠端倉儲改版<br/><br/>可攜程式系統中已經內建 git, 可以在啟動 start.bat 後, 透過 path 的設定, 直接執行 git 指令.<br/><br/>建立 Git 倉儲, 共分為兩類, 一類是直接在 Github 網際介面下建立倉儲時, 要求建立 README.md 檔案, 之後可以直接在近端, 以 git clone 加上倉儲連線 URL, 將倉儲克隆一份到近端, 並以最新版本作為工作目錄, 使用者改版後, 可以直接透過 git add, commit 與 push 對遠端倉儲改版.<br/><br/>另一類則是故意在 Github 網際介面下建立倉儲時, 不要建立任何檔案, 而是在近端自行利用 git 指令建立倉儲架構, 新增內容後, 以 git remote add 設法在近端倉儲中納入 origin URL 後, 將近端倉儲版本新增提交推送到遠端.<br/><br/>git add<br/><br/>git add 可以用來新增一個檔案, 數個檔案, 或在之前提交後所新增的所有內容.<br/><br/>git add 在 GIT 架構下, 是對所新增或修改的內容拍快照:<br/><br/>git add . adds all modified and new (untracked) files in the current directory and all subdirectories to the staging area (a.k.a. the index), thus preparing them to be included in the next git commit . Any files matching the patterns in the .gitignore file will be ignored by git add<br/><br/>git commit<span> </span><br/><br/>git commit 執行之前, 必須使用 git config 建立臨時或永久的身分註記, 因為 GIT 在展開所有改版內容時, 必須明確登錄這些變更的作者與時間.<br/><br/>當使用者採用 git commit -m "改版說明訊息", 此次提交到 .git 目錄下的更動內容, 均會綁定使用者身分與改版所輸入的說明訊息.<br/><br/>git push<br/><br/>git push 在隨後沒有輸入遠端 URL 代號時, 表示要推送到 origin, 若透過 git remote add 設定其他代號與 URL 對應時, git push 加上代號, 就可以將此次的提交內容, 推送到指定的 URL 所在遠端倉儲.</p>
 <p><br/><br/><span>靜態 CMSimfly</span></p>
-<p>利用 CMSimfly (https://github.com/chiamingyen/cmsimfly) 內容, 建立自己的 Github Pages 網站<br/><br/>設法利用<span> </span><a href="http://mde.tw/wcm2019/content/%E5%AF%A6%E7%BF%92%E9%A0%85%E7%9B%AE%E4%B8%89.html">HTML5 CSS 與 Javascript</a>, 納入與機械設計相關的靜態網頁內容</p><h1>靜態 CMSimfly</h1>
+<p>利用 CMSimfly (https://github.com/chiamingyen/cmsimfly) 內容, 建立自己的 Github Pages 網站<br/><br/>設法利用<span> </span><a href="http://mde.tw/wcm2019/content/%E5%AF%A6%E7%BF%92%E9%A0%85%E7%9B%AE%E4%B8%89.html">HTML5 CSS 與 Javascript</a>, 納入與機械設計相關的靜態網頁內容</p>
 <p></p><h1>ROC Flag</h1>
 <!-- 導入 Brython 標準程式庫 -->
 <script src="/static/brython.js"></script>
@@ -243,7 +243,25 @@ var typed = new Typed('.typed-words', {
 <h1>VirtualBox</h1>
 <p>打開VirtualBox程式</p>
 <p><img alt="" height="114" src="/images/virtualBox.png" width="88"/></p>
-<p>建立一個Ubuntu 18.04的虛擬主機</p>
-<p><img alt="" height="46" src="/images/VirtualBox_uUOWuNCwlf.png" width="420"/></p>
+<p>建立一個Ubuntu 18.04的虛擬主機<b>，</b>並完成設定</p>
+<p><img alt="" height="403" src="/images/6OqMoLFf6l.png" width="355"/></p>
+<p>大小調整到 <span style="color: #ff0000;"><strong>4096</strong></span></p>
+<p><img alt="" height="402" src="/images/VirtualBox_R6mxJWDy6F.png" width="353"/></p>
+<p>選中間的</p>
+<p><img alt="" height="402" src="/images/VirtualBox_O3M3GvqaMH.png" width="353"/></p>
+<p>選第三個</p>
+<p><img alt="" height="448" src="/images/VirtualBox_m5cdpjs7dc.png" width="439"/></p>
+<p>選第一個</p>
+<p><img alt="" height="448" src="/images/VirtualBox_OkchOBnZbg.png" width="439"/></p>
+<p>ub的大小調整到<span style="color: #ff0000;">500GB</span></p>
+<p><img alt="" height="448" src="/images/VirtualBox_EYumHHXrWB.png" width="439"/></p>
+<p>選擇橋接</p>
+<p><img alt="" height="407" src="/images/VirtualBox_GNIwxIsOxf.png" width="652"/></p>
+<p>選取18.04.2的檔案</p>
+<p><img alt="" height="513" src="/images/VirtualBox111.png" width="975"/></p>
+<p><span>以 Windows 10  下的 Filezilla client, 將編輯好的 nginx 設定檔案送到 Ubuntu</span></p>
+<p><img caption="false" height="379" src="/images/explorer_OYmRyxtynB.png" width="500"/></p>
+<p><span>以 ifconfig 查 Ubuntu 伺服器的 IP, 測試 nginx 伺服器是否可以連線</span></p>
+<p><img alt="" height="462" src="/images/VirtualBox_1333.png" width="550"/></p>
 <p>完成後的畫面</p>
 <p><img alt="" height="325" src="/images/chrome_UZ5u2jO0kM.png" width="541"/></p>
